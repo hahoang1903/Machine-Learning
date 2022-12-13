@@ -19,8 +19,9 @@ import py_vncorenlp
 
 rdrsegmenter = py_vncorenlp.VnCoreNLP(annotators=['wseg'], save_dir='/path/to/vncorenlp', max_heap_size='-Xmx500m')
 ```
+⚠️ To use VnCoreNLP, you must have Java installed <br>
 
-and segment words using
+Then segment words using
 ```
 word_segmented = rdrsegmenter.word_segment('Tôi học ở đại học Công Nghệ')
 ```
